@@ -18,4 +18,16 @@ struct Node* newNode(int key)
     temp->key = key;
     temp->left = temp->right = NULL;
     return temp;
-};
+}
+
+/* Inorder traversal of a binary tree*/
+void inorder(struct Node* temp)
+{
+    if (!temp)
+        return;
+ 
+    inorder(temp->left);
+    cout << temp->key << " ";
+    inorder(temp->right);
+}
+ 
