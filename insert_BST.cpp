@@ -9,3 +9,13 @@ struct Node {
     int key;
     struct Node* left, *right;
 };
+
+/* function to create a new node of tree and r
+   eturns pointer */
+struct Node* newNode(int key)
+{
+    struct Node* temp = new Node;
+    temp->key = key;
+    temp->left = temp->right = NULL;
+    return temp;
+};
