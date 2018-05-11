@@ -13,3 +13,14 @@ void tower_hannoi (int disk, char tower1, char tower2, char tower3)
         tower_hannoi (disk-1, tower2, tower1, tower3);
     }
 }
+
+int main()
+{
+    int disk;
+    char tower1 = 'A';
+    char tower2 = 'B';
+    char tower3 = 'C';
+    cin >> disk;
+    tower_hannoi (disk, tower1, tower2, tower3);
+    return 0;
+}
